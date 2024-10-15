@@ -12,7 +12,7 @@ export async function getCabins() {
   return data;
 }
 
-//Delet Cabins From supabase
+//Delete Cabins From supabase
 export async function deleteCabin(id) {
   const { data, error } = await supabase.from("cabins").delete().eq("id", id);
 
